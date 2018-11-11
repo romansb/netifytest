@@ -1,0 +1,41 @@
+@import "config";
+@import "header";
+@import "canvas";
+@import "footer";
+@import "projects";
+@import "contact";
+@import "toolbar";
+
+body{
+  background: $lightGrey;
+}
+
+.wrap {
+  position: relative;
+  padding: 40px;
+  top: $navHeight;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: calc(100vh - #{$navHeight - $footerHeight} - 123px);
+  @include animation(fadein 2s);
+}
+
+.App{
+  min-width: 320px;
+}
+
+.game {
+  position: relative;
+  padding: 40px;
+  top: $navHeight;
+  margin: 0 auto;
+  min-height: calc(100vh - #{$navHeight - $footerHeight} - 123px);
+  z-index: 1;
+  @include animation(fadein 2s);
+}
+
+.project_description {
+  a{
+    color: $maroon;
+  }
+}

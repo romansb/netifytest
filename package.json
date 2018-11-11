@@ -1,0 +1,28 @@
+{
+  "name": "roman.me",
+  "version": "0.2.0",
+  "private": true,
+  "homepage": "https://romansb.github.io/netifytest/",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "firebase": "^4.11.0",
+    "gh-pages": "^1.2.0",
+    "react": "^16.2.0",
+    "react-color": "^2.14.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
